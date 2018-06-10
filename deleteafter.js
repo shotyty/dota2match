@@ -5094,19 +5094,19 @@ if ( !window.indexedDB ) {
 //["0"].proMatchOne["0"].hero_id
 	let oneHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[0].hero_id);
 	let oneHeroImage = oneHeroObj.name.replace('npc_dota_hero_', '');
-	$('.radiantOneImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ oneHeroImage + "_lg.png'></img>");
+	$('.radiantOneImage').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/heroes/"+ oneHeroImage + "_lg.png'></img>");
 	let twoHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[1].hero_id);
 	let twoHeroImage = twoHeroObj.name.replace('npc_dota_hero_', '');
-	$('.radiantTwoImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ twoHeroImage + "_lg.png'></img>");
+	$('.radiantTwoImage').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/heroes/"+ twoHeroImage + "_lg.png'></img>");
 	let threeHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[2].hero_id);
 	let threeHeroImage = threeHeroObj.name.replace('npc_dota_hero_', '');
-	$('.radiantThreeImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ threeHeroImage + "_lg.png'></img>");
+	$('.radiantThreeImage').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/heroes/"+ threeHeroImage + "_lg.png'></img>");
 	let fourHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[3].hero_id);
 	let fourHeroImage = fourHeroObj.name.replace('npc_dota_hero_', '');
-	$('.radiantFourImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ fourHeroImage + "_lg.png'></img>");
+	$('.radiantFourImage').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/heroes/"+ fourHeroImage + "_lg.png'></img>");
 	let fiveHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[4].hero_id);
 	let fiveHeroImage = fiveHeroObj.name.replace('npc_dota_hero_', '');
-	$('.radiantFiveImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ fiveHeroImage + "_lg.png'></img>");
+	$('.radiantFiveImage').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/heroes/"+ fiveHeroImage + "_lg.png'></img>");
 
 	let oneItemOne = itemId.find(x => x.id == data[0].proMatchOne[0].item_0);
 	let oneItemTwo = itemId.find(x => x.id == data[0].proMatchOne[0].item_1);
@@ -5119,32 +5119,32 @@ if ( !window.indexedDB ) {
 	if(data[0].proMatchOne[0].item_0 == 0) {
 		$('.oneItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemOne.name +"_lg.png'></img>")
+		$('.oneItemOne').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemOne.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[0].item_1 == 0) {
 		$('.oneItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemTwo.name +"_lg.png'></img>")
+		$('.oneItemTwo').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemTwo.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[0].item_2 == 0) {
 		$('.oneItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemThree.name +"_lg.png'></img>")
+		$('.oneItemThree').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemThree.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[0].item_3 == 0) {
 		$('.oneItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFour.name +"_lg.png'></img>")
+		$('.oneItemFour').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFour.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[0].item_4 == 0) {
 		$('.oneItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFive.name +"_lg.png'></img>")
+		$('.oneItemFive').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFive.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[0].item_5 == 0) {
 		$('.oneItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.oneItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemSix.name +"_lg.png'></img>")
+		$('.oneItemSix').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ oneItemSix.name +"_lg.png'></img>")
 	}
 
 
@@ -5162,32 +5162,32 @@ if ( !window.indexedDB ) {
 	if(data[0].proMatchOne[1].item_0 == 0) {
 		$('.twoItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemOne.name +"_lg.png'></img>")
+		$('.twoItemOne').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemOne.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[1].item_1 == 0) {
 		$('.twoItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemTwo.name +"_lg.png'></img>")
+		$('.twoItemTwo').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemTwo.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[1].item_2 == 0) {
 		$('.twoItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemThree.name +"_lg.png'></img>")
+		$('.twoItemThree').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemThree.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[1].item_3 == 0) {
 		$('.twoItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFour.name +"_lg.png'></img>")
+		$('.twoItemFour').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFour.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[1].item_4 == 0) {
 		$('.twoItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFive.name +"_lg.png'></img>")
+		$('.twoItemFive').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFive.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[1].item_5 == 0) {
 		$('.twoItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.twoItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemSix.name +"_lg.png'></img>")
+		$('.twoItemSix').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ twoItemSix.name +"_lg.png'></img>")
 	}
 
 
@@ -5203,32 +5203,32 @@ if ( !window.indexedDB ) {
 	if(data[0].proMatchOne[2].item_0 == 0) {
 		$('.threeItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemOne.name +"_lg.png'></img>")
+		$('.threeItemOne').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemOne.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[2].item_1 == 0) {
 		$('.threeItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemTwo.name +"_lg.png'></img>")
+		$('.threeItemTwo').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemTwo.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[2].item_2 == 0) {
 		$('.threeItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemThree.name +"_lg.png'></img>")
+		$('.threeItemThree').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemThree.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[2].item_3 == 0) {
 		$('.threeItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFour.name +"_lg.png'></img>")
+		$('.threeItemFour').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFour.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[2].item_4 == 0) {
 		$('.threeItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFive.name +"_lg.png'></img>")
+		$('.threeItemFive').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFive.name +"_lg.png'></img>")
 	}	
 	if(data[0].proMatchOne[2].item_5 == 0) {
 		$('.threeItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.threeItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemSix.name +"_lg.png'></img>")
+		$('.threeItemSix').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ threeItemSix.name +"_lg.png'></img>")
 	}	
 
 	let fourItemOne = itemId.find(x => x.id == data[0].proMatchOne[3].item_0);
@@ -5241,32 +5241,32 @@ if ( !window.indexedDB ) {
 	if(data[0].proMatchOne[3].item_0 == 0) {
 		$('.fourItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemOne.name +"_lg.png'></img>")
+		$('.fourItemOne').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemOne.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[3].item_1 == 0) {
 		$('.fourItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemTwo.name +"_lg.png'></img>")
+		$('.fourItemTwo').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemTwo.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[3].item_2 == 0) {
 		$('.fourItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemThree.name +"_lg.png'></img>")
+		$('.fourItemThree').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemThree.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[3].item_3 == 0) {
 		$('.fourItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFour.name +"_lg.png'></img>")
+		$('.fourItemFour').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFour.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[3].item_4 == 0) {
 		$('.fourItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFive.name +"_lg.png'></img>")
+		$('.fourItemFive').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFive.name +"_lg.png'></img>")
 	}	
 	if(data[0].proMatchOne[3].item_5 == 0) {
 		$('.fourItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fourItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemSix.name +"_lg.png'></img>")
+		$('.fourItemSix').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fourItemSix.name +"_lg.png'></img>")
 	}
 
 	let fiveItemOne = itemId.find(x => x.id == data[0].proMatchOne[4].item_0);
@@ -5279,32 +5279,32 @@ if ( !window.indexedDB ) {
 	if(data[0].proMatchOne[4].item_0 == 0) {
 		$('.fiveItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemOne.name +"_lg.png'></img>")
+		$('.fiveItemOne').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemOne.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[4].item_1 == 0) {
 		$('.fiveItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemTwo.name +"_lg.png'></img>")
+		$('.fiveItemTwo').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemTwo.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[4].item_2 == 0) {
 		$('.fiveItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemThree.name +"_lg.png'></img>")
+		$('.fiveItemThree').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemThree.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[4].item_3 == 0) {
 		$('.fiveItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFour.name +"_lg.png'></img>")
+		$('.fiveItemFour').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFour.name +"_lg.png'></img>")
 	}
 	if(data[0].proMatchOne[4].item_4 == 0) {
 		$('.fiveItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFive.name +"_lg.png'></img>")
+		$('.fiveItemFive').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFive.name +"_lg.png'></img>")
 	}	
 	if(data[0].proMatchOne[4].item_5 == 0) {
 		$('.fiveItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
-		$('.fiveItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemSix.name +"_lg.png'></img>")
+		$('.fiveItemSix').prepend("<img src='https://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemSix.name +"_lg.png'></img>")
 	}
 
 	//Radiant Player One Item Timings
