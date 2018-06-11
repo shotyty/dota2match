@@ -5070,8 +5070,8 @@ var heroAbilities = [
 		console.log(JSON.stringify(xx.players))*/
 
 
-
-fetch('https://72.11.39.21:3000/api/v1/players')
+//https://72.11.39.21:3000/api/v1/players
+fetch('https://jsonblob.com/api/jsonBlob/56c9aaeb-6dc2-11e8-a2f6-f943c6e16357')
   .then(function(response) {
     return response.json();
   })
@@ -5083,106 +5083,106 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 
 
-    
+    //.proMatchOne["0"].hero_id
    // localStorage.setItem('dataSixtyFour', JSON.stringify(zy))
 
 
 
 
 //["0"].proMatchOne["0"].hero_id
-	let oneHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[0].hero_id);
+	let oneHeroObj = heroInfo.find(x => x.id == data.proMatchOne[0].hero_id);
 	let oneHeroImage = oneHeroObj.name.replace('npc_dota_hero_', '');
 	$('.radiantOneImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ oneHeroImage + "_lg.png'></img>");
-	let twoHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[1].hero_id);
+	let twoHeroObj = heroInfo.find(x => x.id == data.proMatchOne[1].hero_id);
 	let twoHeroImage = twoHeroObj.name.replace('npc_dota_hero_', '');
 	$('.radiantTwoImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ twoHeroImage + "_lg.png'></img>");
-	let threeHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[2].hero_id);
+	let threeHeroObj = heroInfo.find(x => x.id == data.proMatchOne[2].hero_id);
 	let threeHeroImage = threeHeroObj.name.replace('npc_dota_hero_', '');
 	$('.radiantThreeImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ threeHeroImage + "_lg.png'></img>");
-	let fourHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[3].hero_id);
+	let fourHeroObj = heroInfo.find(x => x.id == data.proMatchOne[3].hero_id);
 	let fourHeroImage = fourHeroObj.name.replace('npc_dota_hero_', '');
 	$('.radiantFourImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ fourHeroImage + "_lg.png'></img>");
-	let fiveHeroObj = heroInfo.find(x => x.id == data[0].proMatchOne[4].hero_id);
+	let fiveHeroObj = heroInfo.find(x => x.id == data.proMatchOne[4].hero_id);
 	let fiveHeroImage = fiveHeroObj.name.replace('npc_dota_hero_', '');
 	$('.radiantFiveImage').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/heroes/"+ fiveHeroImage + "_lg.png'></img>");
 
-	let oneItemOne = itemId.find(x => x.id == data[0].proMatchOne[0].item_0);
-	let oneItemTwo = itemId.find(x => x.id == data[0].proMatchOne[0].item_1);
-	let oneItemThree = itemId.find(x => x.id == data[0].proMatchOne[0].item_2);
-	let oneItemFour = itemId.find(x => x.id == data[0].proMatchOne[0].item_3);
-	let oneItemFive = itemId.find(x => x.id == data[0].proMatchOne[0].item_4);
-	let oneItemSix = itemId.find(x => x.id == data[0].proMatchOne[0].item_5);
+	let oneItemOne = itemId.find(x => x.id == data.proMatchOne[0].item_0);
+	let oneItemTwo = itemId.find(x => x.id == data.proMatchOne[0].item_1);
+	let oneItemThree = itemId.find(x => x.id == data.proMatchOne[0].item_2);
+	let oneItemFour = itemId.find(x => x.id == data.proMatchOne[0].item_3);
+	let oneItemFive = itemId.find(x => x.id == data.proMatchOne[0].item_4);
+	let oneItemSix = itemId.find(x => x.id == data.proMatchOne[0].item_5);
 
 
-	if(data[0].proMatchOne[0].item_0 == 0) {
+	if(data.proMatchOne[0].item_0 == 0) {
 		$('.oneItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemOne.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[0].item_1 == 0) {
+	if(data.proMatchOne[0].item_1 == 0) {
 		$('.oneItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemTwo.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[0].item_2 == 0) {
+	if(data.proMatchOne[0].item_2 == 0) {
 		$('.oneItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemThree.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[0].item_3 == 0) {
+	if(data.proMatchOne[0].item_3 == 0) {
 		$('.oneItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFour.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[0].item_4 == 0) {
+	if(data.proMatchOne[0].item_4 == 0) {
 		$('.oneItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemFive.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[0].item_5 == 0) {
+	if(data.proMatchOne[0].item_5 == 0) {
 		$('.oneItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.oneItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ oneItemSix.name +"_lg.png'></img>")
 	}
 
 
-	let twoItemOne = itemId.find(x => x.id == data[0].proMatchOne[1].item_0);
-	let twoItemTwo = itemId.find(x => x.id == data[0].proMatchOne[1].item_1);
-	let twoItemThree = itemId.find(x => x.id == data[0].proMatchOne[1].item_2);
-	let twoItemFour = itemId.find(x => x.id == data[0].proMatchOne[1].item_3);
-	let twoItemFive = itemId.find(x => x.id == data[0].proMatchOne[1].item_4);
-	let twoItemSix = itemId.find(x => x.id == data[0].proMatchOne[1].item_5);
+	let twoItemOne = itemId.find(x => x.id == data.proMatchOne[1].item_0);
+	let twoItemTwo = itemId.find(x => x.id == data.proMatchOne[1].item_1);
+	let twoItemThree = itemId.find(x => x.id == data.proMatchOne[1].item_2);
+	let twoItemFour = itemId.find(x => x.id == data.proMatchOne[1].item_3);
+	let twoItemFive = itemId.find(x => x.id == data.proMatchOne[1].item_4);
+	let twoItemSix = itemId.find(x => x.id == data.proMatchOne[1].item_5);
 
 
 
 
 
-	if(data[0].proMatchOne[1].item_0 == 0) {
+	if(data.proMatchOne[1].item_0 == 0) {
 		$('.twoItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemOne.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[1].item_1 == 0) {
+	if(data.proMatchOne[1].item_1 == 0) {
 		$('.twoItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemTwo.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[1].item_2 == 0) {
+	if(data.proMatchOne[1].item_2 == 0) {
 		$('.twoItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemThree.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[1].item_3 == 0) {
+	if(data.proMatchOne[1].item_3 == 0) {
 		$('.twoItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFour.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[1].item_4 == 0) {
+	if(data.proMatchOne[1].item_4 == 0) {
 		$('.twoItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemFive.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[1].item_5 == 0) {
+	if(data.proMatchOne[1].item_5 == 0) {
 		$('.twoItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.twoItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ twoItemSix.name +"_lg.png'></img>")
@@ -5191,115 +5191,115 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 
 
-	let threeItemOne = itemId.find(x => x.id == data[0].proMatchOne[2].item_0);
-	let threeItemTwo = itemId.find(x => x.id == data[0].proMatchOne[2].item_1);
-	let threeItemThree = itemId.find(x => x.id == data[0].proMatchOne[2].item_2);
-	let threeItemFour = itemId.find(x => x.id == data[0].proMatchOne[2].item_3);
-	let threeItemFive = itemId.find(x => x.id == data[0].proMatchOne[2].item_4);
-	let threeItemSix = itemId.find(x => x.id == data[0].proMatchOne[2].item_5);
+	let threeItemOne = itemId.find(x => x.id == data.proMatchOne[2].item_0);
+	let threeItemTwo = itemId.find(x => x.id == data.proMatchOne[2].item_1);
+	let threeItemThree = itemId.find(x => x.id == data.proMatchOne[2].item_2);
+	let threeItemFour = itemId.find(x => x.id == data.proMatchOne[2].item_3);
+	let threeItemFive = itemId.find(x => x.id == data.proMatchOne[2].item_4);
+	let threeItemSix = itemId.find(x => x.id == data.proMatchOne[2].item_5);
 
-	if(data[0].proMatchOne[2].item_0 == 0) {
+	if(data.proMatchOne[2].item_0 == 0) {
 		$('.threeItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemOne.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[2].item_1 == 0) {
+	if(data.proMatchOne[2].item_1 == 0) {
 		$('.threeItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemTwo.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[2].item_2 == 0) {
+	if(data.proMatchOne[2].item_2 == 0) {
 		$('.threeItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemThree.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[2].item_3 == 0) {
+	if(data.proMatchOne[2].item_3 == 0) {
 		$('.threeItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFour.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[2].item_4 == 0) {
+	if(data.proMatchOne[2].item_4 == 0) {
 		$('.threeItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemFive.name +"_lg.png'></img>")
 	}	
-	if(data[0].proMatchOne[2].item_5 == 0) {
+	if(data.proMatchOne[2].item_5 == 0) {
 		$('.threeItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.threeItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ threeItemSix.name +"_lg.png'></img>")
 	}	
 
-	let fourItemOne = itemId.find(x => x.id == data[0].proMatchOne[3].item_0);
-	let fourItemTwo = itemId.find(x => x.id == data[0].proMatchOne[3].item_1);
-	let fourItemThree = itemId.find(x => x.id == data[0].proMatchOne[3].item_2);
-	let fourItemFour = itemId.find(x => x.id == data[0].proMatchOne[3].item_3);
-	let fourItemFive = itemId.find(x => x.id == data[0].proMatchOne[3].item_4);
-	let fourItemSix = itemId.find(x => x.id == data[0].proMatchOne[3].item_5);
+	let fourItemOne = itemId.find(x => x.id == data.proMatchOne[3].item_0);
+	let fourItemTwo = itemId.find(x => x.id == data.proMatchOne[3].item_1);
+	let fourItemThree = itemId.find(x => x.id == data.proMatchOne[3].item_2);
+	let fourItemFour = itemId.find(x => x.id == data.proMatchOne[3].item_3);
+	let fourItemFive = itemId.find(x => x.id == data.proMatchOne[3].item_4);
+	let fourItemSix = itemId.find(x => x.id == data.proMatchOne[3].item_5);
 
-	if(data[0].proMatchOne[3].item_0 == 0) {
+	if(data.proMatchOne[3].item_0 == 0) {
 		$('.fourItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemOne.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[3].item_1 == 0) {
+	if(data.proMatchOne[3].item_1 == 0) {
 		$('.fourItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemTwo.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[3].item_2 == 0) {
+	if(data.proMatchOne[3].item_2 == 0) {
 		$('.fourItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemThree.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[3].item_3 == 0) {
+	if(data.proMatchOne[3].item_3 == 0) {
 		$('.fourItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFour.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[3].item_4 == 0) {
+	if(data.proMatchOne[3].item_4 == 0) {
 		$('.fourItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemFive.name +"_lg.png'></img>")
 	}	
-	if(data[0].proMatchOne[3].item_5 == 0) {
+	if(data.proMatchOne[3].item_5 == 0) {
 		$('.fourItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fourItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fourItemSix.name +"_lg.png'></img>")
 	}
 
-	let fiveItemOne = itemId.find(x => x.id == data[0].proMatchOne[4].item_0);
-	let fiveItemTwo = itemId.find(x => x.id == data[0].proMatchOne[4].item_1);
-	let fiveItemThree = itemId.find(x => x.id == data[0].proMatchOne[4].item_2);
-	let fiveItemFour = itemId.find(x => x.id == data[0].proMatchOne[4].item_3);
-	let fiveItemFive = itemId.find(x => x.id == data[0].proMatchOne[4].item_4);
-	let fiveItemSix = itemId.find(x => x.id == data[0].proMatchOne[4].item_5);
+	let fiveItemOne = itemId.find(x => x.id == data.proMatchOne[4].item_0);
+	let fiveItemTwo = itemId.find(x => x.id == data.proMatchOne[4].item_1);
+	let fiveItemThree = itemId.find(x => x.id == data.proMatchOne[4].item_2);
+	let fiveItemFour = itemId.find(x => x.id == data.proMatchOne[4].item_3);
+	let fiveItemFive = itemId.find(x => x.id == data.proMatchOne[4].item_4);
+	let fiveItemSix = itemId.find(x => x.id == data.proMatchOne[4].item_5);
 
-	if(data[0].proMatchOne[4].item_0 == 0) {
+	if(data.proMatchOne[4].item_0 == 0) {
 		$('.fiveItemOne').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemOne').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemOne.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[4].item_1 == 0) {
+	if(data.proMatchOne[4].item_1 == 0) {
 		$('.fiveItemTwo').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemTwo').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemTwo.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[4].item_2 == 0) {
+	if(data.proMatchOne[4].item_2 == 0) {
 		$('.fiveItemThree').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemThree').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemThree.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[4].item_3 == 0) {
+	if(data.proMatchOne[4].item_3 == 0) {
 		$('.fiveItemFour').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemFour').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFour.name +"_lg.png'></img>")
 	}
-	if(data[0].proMatchOne[4].item_4 == 0) {
+	if(data.proMatchOne[4].item_4 == 0) {
 		$('.fiveItemFive').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemFive').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemFive.name +"_lg.png'></img>")
 	}	
-	if(data[0].proMatchOne[4].item_5 == 0) {
+	if(data.proMatchOne[4].item_5 == 0) {
 		$('.fiveItemSix').prepend("<img src='https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg'></img>")
 	}else{
 		$('.fiveItemSix').prepend("<img src='http://cdn.dota2.com/apps/dota2/images/items/"+ fiveItemSix.name +"_lg.png'></img>")
@@ -5307,72 +5307,72 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 	//Radiant Player One Item Timings
 
-	var aa = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemOne.name);
-	var ab = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemTwo.name);
-	var ac = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemThree.name);
-	var ad = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemFour.name);
-	var ae = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemFive.name);
-	var af = data[0].proMatchOne[0].purchase_log.filter(x => x.key == oneItemSix.name);
+	var aa = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemOne.name);
+	var ab = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemTwo.name);
+	var ac = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemThree.name);
+	var ad = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemFour.name);
+	var ae = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemFive.name);
+	var af = data.proMatchOne[0].purchase_log.filter(x => x.key == oneItemSix.name);
 
 	console.log(aa[0].time)
 
 	
 
 	console.log(ae, ad)
-	if(aa === undefined || data[0].proMatchOne[0].item_0 == 0 || data[0].proMatchOne[0].item_0 == 33 || data[0].proMatchOne[0].item_0 == 117 || data[0].proMatchOne[0].item_0 ==260) {
+	if(aa === undefined || data.proMatchOne[0].item_0 == 0 || data.proMatchOne[0].item_0 == 33 || data.proMatchOne[0].item_0 == 117 || data.proMatchOne[0].item_0 ==260) {
 		$('.oneItemOneTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[0].item_0 == 218) {
-		zz = data[0].proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_0 == 218) {
+		zz = data.proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
 		$('.oneItemOneTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemOneTiming').append('<span>'+(aa[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ab === undefined || data[0].proMatchOne[0].item_1 == 0 || data[0].proMatchOne[0].item_1 == 33 || data[0].proMatchOne[0].item_1 == 117 || data[0].proMatchOne[0].item_1 ==260) {
+	if(ab === undefined || data.proMatchOne[0].item_1 == 0 || data.proMatchOne[0].item_1 == 33 || data.proMatchOne[0].item_1 == 117 || data.proMatchOne[0].item_1 ==260) {
 		$('.oneItemTwoTiming').append('<span></span>');
 	}else if(ab[0] == aa[0]){
 		$('.oneItemTwoTiming').append('<span>'+(ab[ab.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[0].item_1 == 218) {
-		zz = data[0].proMatchOne[0].purchase.log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_1 == 218) {
+		zz = data.proMatchOne[0].purchase.log.filter(x => x.key === "ward_observer");
 		$('.oneItemTwoTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemTwoTiming').append('<span>'+(ab[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ac === undefined || data[0].proMatchOne[0].item_2 == 0 || data[0].proMatchOne[0].item_2 == 33 || data[0].proMatchOne[0].item_2 == 117 || data[0].proMatchOne[0].item_2 ==260) {
+	if(ac === undefined || data.proMatchOne[0].item_2 == 0 || data.proMatchOne[0].item_2 == 33 || data.proMatchOne[0].item_2 == 117 || data.proMatchOne[0].item_2 ==260) {
 		$('.oneItemThreeTiming').append('<span></span>');
 	}else if(ac[0] == aa[0] || ac[0] == ab[0]){
 		$('.oneItemThreeTiming').append('<span>'+(ac[ac.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[0].item_2 == 218) {
-		zz = data[0].proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_2 == 218) {
+		zz = data.proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
 		$('.oneItemThreeTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemThreeTiming').append('<span>'+(ac[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ad === undefined || data[0].proMatchOne[0].item_3 == 0 || data[0].proMatchOne[0].item_3 == 33 || data[0].proMatchOne[0].item_3 == 117 || data[0].proMatchOne[0].item_3 ==260) {
+	if(ad === undefined || data.proMatchOne[0].item_3 == 0 || data.proMatchOne[0].item_3 == 33 || data.proMatchOne[0].item_3 == 117 || data.proMatchOne[0].item_3 ==260) {
 		$('.oneItemFourTiming').append('<span></span>');
 	}else if(ad[0] == aa[0] || ad[0] == ab[0] || ad[0] == ac[0]){
 		$('.oneItemFourTiming').append('<span>'+(ad[ad.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[0].item_3 == 218) {
-		zz = data[0].proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_3 == 218) {
+		zz = data.proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
 		$('.oneItemFourTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemFourTiming').append('<span>'+(ad[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ae === undefined || data[0].proMatchOne[0].item_4 == 0 || data[0].proMatchOne[0].item_4 == 33 || data[0].proMatchOne[0].item_4 == 117 || data[0].proMatchOne[0].item_4 ==260) {
+	if(ae === undefined || data.proMatchOne[0].item_4 == 0 || data.proMatchOne[0].item_4 == 33 || data.proMatchOne[0].item_4 == 117 || data.proMatchOne[0].item_4 ==260) {
 		$('.oneItemFiveTiming').append('<span></span>');
 	}else if(ae[0] == aa[0] || ae[0] == ab[0] || ae[0] == ac[0] || ae[0] == ad[0]){
 		$('.oneItemFiveTiming').append('<span>'+(ae[ae.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[0].item_4 == 218) {
-		zz = data[0].proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_4 == 218) {
+		zz = data.proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
 		$('.oneItemFiveTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemFiveTiming').append('<span>'+(ae[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(af === undefined || data[0].proMatchOne[0].item_5 == 0 || data[0].proMatchOne[0].item_5 == 33 || data[0].proMatchOne[0].item_5 == 117 || data[0].proMatchOne[0].item_5 ==260) {
+	if(af === undefined || data.proMatchOne[0].item_5 == 0 || data.proMatchOne[0].item_5 == 33 || data.proMatchOne[0].item_5 == 117 || data.proMatchOne[0].item_5 ==260) {
 		$('.oneItemSixTiming').append('<span></span>');
 	}else if(af[0] == aa[0] || af[0] == ab[0] || af[0] == ac[0] || af[0] == ad[0] || af[0] == ae[0]){
 		$('.oneItemSixTiming').append('<span>'+(af[af.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[0].item_5 == 218) {
-		zz = data[0].proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[0].item_5 == 218) {
+		zz = data.proMatchOne[0].purchase_log.filter(x => x.key === "ward_observer");
 		$('.oneItemSixTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.oneItemSixTiming').append('<span>'+(af[0].time / 60).toFixed(0)+'m</span>');
@@ -5380,68 +5380,68 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 	
 
-	var ba = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemOne.name);
-	var bb = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemTwo.name);
-	var bc = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemThree.name);
-	var bd = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemFour.name);
-	var be = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemFive.name);
-	var bf = data[0].proMatchOne[1].purchase_log.filter(x => x.key == twoItemSix.name);
+	var ba = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemOne.name);
+	var bb = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemTwo.name);
+	var bc = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemThree.name);
+	var bd = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemFour.name);
+	var be = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemFive.name);
+	var bf = data.proMatchOne[1].purchase_log.filter(x => x.key == twoItemSix.name);
 
 
-	if(ba === undefined || data[0].proMatchOne[1].item_0 == 0 || data[0].proMatchOne[1].item_0 == 33 || data[0].proMatchOne[1].item_0 == 117 || data[0].proMatchOne[1].item_0 ==260) {
+	if(ba === undefined || data.proMatchOne[1].item_0 == 0 || data.proMatchOne[1].item_0 == 33 || data.proMatchOne[1].item_0 == 117 || data.proMatchOne[1].item_0 ==260) {
 		$('.twoItemOneTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[1].item_0 == 218) {
-		zz = data[0].proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_0 == 218) {
+		zz = data.proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
 		$('.twoItemOneTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemOneTiming').append('<span>'+(ba[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(bb === undefined || data[0].proMatchOne[1].item_1 == 0 || data[0].proMatchOne[1].item_1 == 33 || data[0].proMatchOne[1].item_1 == 117 || data[0].proMatchOne[1].item_1 ==260) {
+	if(bb === undefined || data.proMatchOne[1].item_1 == 0 || data.proMatchOne[1].item_1 == 33 || data.proMatchOne[1].item_1 == 117 || data.proMatchOne[1].item_1 ==260) {
 		$('.twoItemTwoTiming').append('<span></span>');
 	}else if(bb[0] == ba[0]){
 		$('.twoItemTwoTiming').append('<span>'+(bb[bb.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[1].item_1 == 218) {
-		zz = data[0].proMatchOne[1].purchase.log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_1 == 218) {
+		zz = data.proMatchOne[1].purchase.log.filter(x => x.key === "ward_observer");
 		$('.twoItemTwoTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemTwoTiming').append('<span>'+(bb[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(bc === undefined || data[0].proMatchOne[1].item_2 == 0 || data[0].proMatchOne[1].item_2 == 33 || data[0].proMatchOne[1].item_2 == 117 || data[0].proMatchOne[1].item_2 ==260) {
+	if(bc === undefined || data.proMatchOne[1].item_2 == 0 || data.proMatchOne[1].item_2 == 33 || data.proMatchOne[1].item_2 == 117 || data.proMatchOne[1].item_2 ==260) {
 		$('.twoItemThreeTiming').append('<span></span>');
 	}else if(bc[0] == ba[0] || bc[0] == bb[0]){
 		$('.twoItemThreeTiming').append('<span>'+(bc[bc.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[1].item_2 == 218) {
-		zz = data[0].proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_2 == 218) {
+		zz = data.proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
 		$('.twoItemThreeTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemThreeTiming').append('<span>'+(bc[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(bc === undefined || data[0].proMatchOne[1].item_3 == 0 || data[0].proMatchOne[1].item_3 == 33 || data[0].proMatchOne[1].item_3 == 117 || data[0].proMatchOne[1].item_3 ==260) {
+	if(bc === undefined || data.proMatchOne[1].item_3 == 0 || data.proMatchOne[1].item_3 == 33 || data.proMatchOne[1].item_3 == 117 || data.proMatchOne[1].item_3 ==260) {
 		$('.twoItemFourTiming').append('<span></span>');
 	}else if(bd[0] == ba[0] || bd[0] == bb[0] || bd[0] == bc[0]){
 		$('.twoItemFourTiming').append('<span>'+(bd[bd.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[1].item_3 == 218) {
-		zz = data[0].proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_3 == 218) {
+		zz = data.proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
 		$('.twoItemFourTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemFourTiming').append('<span>'+(bd[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(be === undefined || data[0].proMatchOne[1].item_4 == 0 || data[0].proMatchOne[1].item_4 == 33 || data[0].proMatchOne[1].item_4 == 117 || data[0].proMatchOne[1].item_4 ==260) {
+	if(be === undefined || data.proMatchOne[1].item_4 == 0 || data.proMatchOne[1].item_4 == 33 || data.proMatchOne[1].item_4 == 117 || data.proMatchOne[1].item_4 ==260) {
 		$('.twoItemFiveTiming').append('<span></span>');
 	}else if(be[0] == ba[0] || be[0] == bb[0] || be[0] == bc[0] || be[0] == bc[0]){
 		$('.twoItemFiveTiming').append('<span>'+(be[be.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[1].item_4 == 218) {
-		zz = data[0].proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_4 == 218) {
+		zz = data.proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
 		$('.twoItemFiveTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemFiveTiming').append('<span>'+(be[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(bf === undefined || data[0].proMatchOne[1].item_5 == 0 || data[0].proMatchOne[1].item_5 == 33 || data[0].proMatchOne[1].item_5 == 117 || data[0].proMatchOne[1].item_5 ==260) {
+	if(bf === undefined || data.proMatchOne[1].item_5 == 0 || data.proMatchOne[1].item_5 == 33 || data.proMatchOne[1].item_5 == 117 || data.proMatchOne[1].item_5 ==260) {
 		$('.twoItemSixTiming').append('<span></span>');
 	}else if(bf[0] == ba[0] || bf[0] == bb[0] || bf[0] == bc[0] || bf[0] == bc[0] || bf[0] == be[0]){
 		$('.twoItemSixTiming').append('<span>'+(bf[bf.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[1].item_5 == 218) {
-		zz = data[0].proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[1].item_5 == 218) {
+		zz = data.proMatchOne[1].purchase_log.filter(x => x.key === "ward_observer");
 		$('.twoItemSixTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.twoItemSixTiming').append('<span>'+(bf[0].time / 60).toFixed(0)+'m</span>');
@@ -5449,79 +5449,79 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 
 
-	var ca = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemOne.name);
-	var cb = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemTwo.name);
-	var cc = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemThree.name);
-	var cd = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemFour.name);
-	var ce = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemFive.name);
-	var cf = data[0].proMatchOne[2].purchase_log.filter(x => x.key == threeItemSix.name);
+	var ca = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemOne.name);
+	var cb = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemTwo.name);
+	var cc = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemThree.name);
+	var cd = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemFour.name);
+	var ce = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemFive.name);
+	var cf = data.proMatchOne[2].purchase_log.filter(x => x.key == threeItemSix.name);
 
-	if(ca === undefined || data[0].proMatchOne[2].item_0 == 0 || data[0].proMatchOne[2].item_0 == 33 || data[0].proMatchOne[2].item_0 == 117 || data[0].proMatchOne[2].item_0 ==260) {
+	if(ca === undefined || data.proMatchOne[2].item_0 == 0 || data.proMatchOne[2].item_0 == 33 || data.proMatchOne[2].item_0 == 117 || data.proMatchOne[2].item_0 ==260) {
 		$('.threeItemOneTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[2].item_0 == 218) {
-		zz = data[0].proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_0 == 218) {
+		zz = data.proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
 		$('.threeItemOneTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemOneTiming').append('<span>'+(ca[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(cb === undefined || data[0].proMatchOne[2].item_1 == 0 || data[0].proMatchOne[2].item_1 == 33 || data[0].proMatchOne[2].item_1 == 117 || data[0].proMatchOne[2].item_1 ==260) {
+	if(cb === undefined || data.proMatchOne[2].item_1 == 0 || data.proMatchOne[2].item_1 == 33 || data.proMatchOne[2].item_1 == 117 || data.proMatchOne[2].item_1 ==260) {
 		$('.threeItemTwoTiming').append('<span></span>');
 	}else if(cb[0] == ca[0]){
 		$('.threeItemTwoTiming').append('<span>'+(cb[cb.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[2].item_1 == 218) {
-		zz = data[0].proMatchOne[2].purchase.log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_1 == 218) {
+		zz = data.proMatchOne[2].purchase.log.filter(x => x.key === "ward_observer");
 		$('.threeItemTwoTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemTwoTiming').append('<span>'+(cb[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(cc === undefined || data[0].proMatchOne[2].item_2 == 0 || data[0].proMatchOne[2].item_2 == 33 || data[0].proMatchOne[2].item_2 == 117 || data[0].proMatchOne[2].item_2 ==260) {
+	if(cc === undefined || data.proMatchOne[2].item_2 == 0 || data.proMatchOne[2].item_2 == 33 || data.proMatchOne[2].item_2 == 117 || data.proMatchOne[2].item_2 ==260) {
 		$('.threeItemThreeTiming').append('<span></span>');
 	}else if(cc[0] == ca[0] || cc[0] == cb[0]){
 		$('.threeItemThreeTiming').append('<span>'+(cc[cc.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[2].item_2 == 218) {
-		zz = data[0].proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_2 == 218) {
+		zz = data.proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
 		$('.threeItemThreeTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemThreeTiming').append('<span>'+(cc[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(cc === undefined || data[0].proMatchOne[2].item_3 == 0 || data[0].proMatchOne[2].item_3 == 33 || data[0].proMatchOne[2].item_3 == 117 || data[0].proMatchOne[2].item_3 ==260) {
+	if(cc === undefined || data.proMatchOne[2].item_3 == 0 || data.proMatchOne[2].item_3 == 33 || data.proMatchOne[2].item_3 == 117 || data.proMatchOne[2].item_3 ==260) {
 		$('.threeItemFourTiming').append('<span></span>');
 	}else if(cd[0] == ca[0] || cd[0] == cb[0] || cd[0] == cc[0]){
 		$('.threeItemFourTiming').append('<span>'+(cd[cd.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[2].item_3 == 218) {
-		zz = data[0].proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_3 == 218) {
+		zz = data.proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
 		$('.threeItemFourTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemFourTiming').append('<span>'+(cd[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ce === undefined || data[0].proMatchOne[2].item_4 == 0 || data[0].proMatchOne[2].item_4 == 33 || data[0].proMatchOne[2].item_4 == 117 || data[0].proMatchOne[2].item_4 ==260) {
+	if(ce === undefined || data.proMatchOne[2].item_4 == 0 || data.proMatchOne[2].item_4 == 33 || data.proMatchOne[2].item_4 == 117 || data.proMatchOne[2].item_4 ==260) {
 		$('.threeItemFiveTiming').append('<span></span>');
 	}else if(ce[0] == ca[0] || ce[0] == cb[0] || ce[0] == cc[0] || ce[0] == cc[0]){
 		$('.threeItemFiveTiming').append('<span>'+(ce[ce.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[2].item_4 == 218) {
-		zz = data[0].proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_4 == 218) {
+		zz = data.proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
 		$('.threeItemFiveTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemFiveTiming').append('<span>'+(ce[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(cf === undefined || data[0].proMatchOne[2].item_5 == 0 || data[0].proMatchOne[2].item_5 == 33 || data[0].proMatchOne[2].item_5 == 117 || data[0].proMatchOne[2].item_5 ==260) {
+	if(cf === undefined || data.proMatchOne[2].item_5 == 0 || data.proMatchOne[2].item_5 == 33 || data.proMatchOne[2].item_5 == 117 || data.proMatchOne[2].item_5 ==260) {
 		$('.threeItemSixTiming').append('<span></span>');
 	}else if(cf[0] == ca[0] || cf[0] == cb[0] || cf[0] == cc[0] || cf[0] == cc[0] || cf[0]== ce[0]){
 		$('.threeItemSixTiming').append('<span>'+(cf[cf.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[2].item_5 == 218) {
-		zz = data[0].proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[2].item_5 == 218) {
+		zz = data.proMatchOne[2].purchase_log.filter(x => x.key === "ward_observer");
 		$('.threeItemSixTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.threeItemSixTiming').append('<span>'+(cf[0].time / 60).toFixed(0)+'m</span>');
 	}
 	
 
-	var da = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemOne.name);
-	var db = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemTwo.name);
-	var dc = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemThree.name);
-	var dd = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemFour.name);
-	var de = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemFive.name);
-	var df = data[0].proMatchOne[3].purchase_log.filter(x => x.key == fourItemSix.name);
+	var da = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemOne.name);
+	var db = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemTwo.name);
+	var dc = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemThree.name);
+	var dd = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemFour.name);
+	var de = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemFive.name);
+	var df = data.proMatchOne[3].purchase_log.filter(x => x.key == fourItemSix.name);
 	
 
 	console.log(da, db)
@@ -5533,64 +5533,64 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 	}
 
 
-	if(da === undefined || data[0].proMatchOne[3].item_0 == 0 || data[0].proMatchOne[3].item_0 == 33 || data[0].proMatchOne[3].item_0 == 117 || data[0].proMatchOne[3].item_0 ==260) {
+	if(da === undefined || data.proMatchOne[3].item_0 == 0 || data.proMatchOne[3].item_0 == 33 || data.proMatchOne[3].item_0 == 117 || data.proMatchOne[3].item_0 ==260) {
 		$('.fourItemOneTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[3].item_0 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_0 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemOneTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemOneTiming').append('<span>'+(da[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(db === undefined || data[0].proMatchOne[3].item_1 == 0 || data[0].proMatchOne[3].item_1 == 33 || data[0].proMatchOne[3].item_1 == 117 || data[0].proMatchOne[3].item_1 ==260) {
+	if(db === undefined || data.proMatchOne[3].item_1 == 0 || data.proMatchOne[3].item_1 == 33 || data.proMatchOne[3].item_1 == 117 || data.proMatchOne[3].item_1 ==260) {
 		$('.fourItemTwoTiming').append('<span></span>');
 	}else if(db[0] == da[0]){
 		$('.fourItemTwoTiming').append('<span>'+(db[db.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[3].item_1 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_1 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemTwoTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemTwoTiming').append('<span>'+(db[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(dc === undefined || data[0].proMatchOne[3].item_2 == 0 || data[0].proMatchOne[3].item_2 == 33 || data[0].proMatchOne[3].item_2 == 117 || data[0].proMatchOne[3].item_2 ==260) {
+	if(dc === undefined || data.proMatchOne[3].item_2 == 0 || data.proMatchOne[3].item_2 == 33 || data.proMatchOne[3].item_2 == 117 || data.proMatchOne[3].item_2 ==260) {
 		$('.fourItemThreeTiming').append('<span></span>');
 	}else if(dc[0] == da[0] || dc[0] == db[0]){
 		$('.fourItemThreeTiming').append('<span>'+(dc[dc.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[3].item_2 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_2 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemThreeTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemThreeTiming').append('<span>'+(dc[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(dd === undefined || data[0].proMatchOne[3].item_3 == 0 || data[0].proMatchOne[3].item_3 == 33 || data[0].proMatchOne[3].item_3 == 117 || data[0].proMatchOne[3].item_3 ==260) {
+	if(dd === undefined || data.proMatchOne[3].item_3 == 0 || data.proMatchOne[3].item_3 == 33 || data.proMatchOne[3].item_3 == 117 || data.proMatchOne[3].item_3 ==260) {
 		$('.fourItemFourTiming').append('<span></span>');
 	}else if(dd[0] == da[0] || dd[0] == db[0] || dd[0] == dc[0]){
 		$('fourItemFourTiming').append('<span>'+(dd[dd.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[3].item_3 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_3 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemFourTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemFourTiming').append('<span>'+(dd[0].time / 60).toFixed(0)+'m</span>');
 	}
 
 
-	if(de === undefined || data[0].proMatchOne[3].item_4 == 0 || data[0].proMatchOne[3].item_4 == 33 || data[0].proMatchOne[3].item_4 == 117 || data[0].proMatchOne[3].item_4 ==260) {
+	if(de === undefined || data.proMatchOne[3].item_4 == 0 || data.proMatchOne[3].item_4 == 33 || data.proMatchOne[3].item_4 == 117 || data.proMatchOne[3].item_4 ==260) {
 		$('.fourItemFiveTiming').append('<span></span>');
 	}else if(de[0] == da[0] || de[0] == db[0] || de[0] == dc[0] || de[0] == dd[0]){
 		$('.fourItemFiveTiming').append('<span>'+(de[de.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[3].item_4 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_4 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemFiveTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemFiveTiming').append('<span>'+(de[0].time / 60).toFixed(0)+'m</span>');
 	}
 
 
-	if(df === undefined || data[0].proMatchOne[3].item_5 == 0 || data[0].proMatchOne[3].item_5 == 33 || data[0].proMatchOne[3].item_5 == 117 || data[0].proMatchOne[3].item_5 ==260) {
+	if(df === undefined || data.proMatchOne[3].item_5 == 0 || data.proMatchOne[3].item_5 == 33 || data.proMatchOne[3].item_5 == 117 || data.proMatchOne[3].item_5 ==260) {
 		$('.fourItemSixTiming').append('<span></span>');
 	}else if(df[0] == da[0] || df[0] == db[0] || df[0] == dc[0] || df[0] == dd[0] || df[0] == de[0]){
 		$('.fourItemSixTiming').append('<span>'+(df[df.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[3].item_5 == 218) {
-		zz = data[0].proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[3].item_5 == 218) {
+		zz = data.proMatchOne[3].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fourItemSixTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fourItemSixTiming').append('<span>'+(df[0].time / 60).toFixed(0)+'m</span>');
@@ -5599,92 +5599,92 @@ fetch('https://72.11.39.21:3000/api/v1/players')
 
 
 
-	var ea = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemOne.name);
-	var eb = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemTwo.name);
-	var ec = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemThree.name);
-	var ed = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemFour.name);
-	var ee = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemFive.name);
-	var ef = data[0].proMatchOne[4].purchase_log.filter(x => x.key == fiveItemSix.name);
+	var ea = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemOne.name);
+	var eb = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemTwo.name);
+	var ec = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemThree.name);
+	var ed = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemFour.name);
+	var ee = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemFive.name);
+	var ef = data.proMatchOne[4].purchase_log.filter(x => x.key == fiveItemSix.name);
 
-	if(ea === undefined || data[0].proMatchOne[4].item_0 == 0 || data[0].proMatchOne[4].item_0 == 33 || data[0].proMatchOne[4].item_0 == 117 || data[0].proMatchOne[4].item_0 ==260) {
+	if(ea === undefined || data.proMatchOne[4].item_0 == 0 || data.proMatchOne[4].item_0 == 33 || data.proMatchOne[4].item_0 == 117 || data.proMatchOne[4].item_0 ==260) {
 		$('.fiveItemOneTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[4].item_0 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_0 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemOneTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fiveItemOneTiming').append('<span>'+(ea[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(eb === undefined || data[0].proMatchOne[4].item_1 == 0 || data[0].proMatchOne[4].item_1 == 33 || data[0].proMatchOne[4].item_1 == 117 || data[0].proMatchOne[4].item_1 ==260) {
+	if(eb === undefined || data.proMatchOne[4].item_1 == 0 || data.proMatchOne[4].item_1 == 33 || data.proMatchOne[4].item_1 == 117 || data.proMatchOne[4].item_1 ==260) {
 		$('.fiveItemTwoTiming').append('<span></span>');
 	}else if(eb[0] == ea[0]){
 		$('.fiveItemTwoTiming').append('<span>'+(eb[eb.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[4].item_1 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_1 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemTwoTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fiveItemTwoTiming').append('<span>'+(eb[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ec === undefined || data[0].proMatchOne[4].item_2 == 0 || data[0].proMatchOne[4].item_2 == 33 || data[0].proMatchOne[4].item_2 == 117 || data[0].proMatchOne[4].item_2 ==260) {
+	if(ec === undefined || data.proMatchOne[4].item_2 == 0 || data.proMatchOne[4].item_2 == 33 || data.proMatchOne[4].item_2 == 117 || data.proMatchOne[4].item_2 ==260) {
 		$('.fiveItemThreeTiming').append('<span></span>');
-	}else if(data[0].proMatchOne[4].item_2 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_2 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemThreeTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else if(ec[0] == ea[0] || ec[0] == eb[0]){
 		$('.fiveItemThreeTiming').append('<span>'+(ec[ec.length - 1].time / 60).toFixed(0)+'m</span>')
 	}else { 
 		$('.fiveItemThreeTiming').append('<span>'+(ec[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ed === undefined || data[0].proMatchOne[4].item_3 == 0 || data[0].proMatchOne[4].item_3 == 33 || data[0].proMatchOne[4].item_3 == 117 || data[0].proMatchOne[4].item_3 ==260) {
+	if(ed === undefined || data.proMatchOne[4].item_3 == 0 || data.proMatchOne[4].item_3 == 33 || data.proMatchOne[4].item_3 == 117 || data.proMatchOne[4].item_3 ==260) {
 		$('.fiveItemFourTiming').append('<span></span>');
 	}else if(ed[0] == ea[0] || ed[0] == eb[0] || ed[0] == ec[0]){
 		$('.fiveItemFourTiming').append('<span>'+(ed[ed.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[4].item_3 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_3 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemFourTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fiveItemFourTiming').append('<span>'+(ed[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ee === undefined || data[0].proMatchOne[4].item_4 == 0 || data[0].proMatchOne[4].item_4 == 33 || data[0].proMatchOne[4].item_4 == 117 || data[0].proMatchOne[4].item_4 ==260) {
+	if(ee === undefined || data.proMatchOne[4].item_4 == 0 || data.proMatchOne[4].item_4 == 33 || data.proMatchOne[4].item_4 == 117 || data.proMatchOne[4].item_4 ==260) {
 		$('.fiveItemFiveTiming').append('<span></span>');
 	}else if(ee[0] == ea[0] || ee[0] == eb[0] || ee[0] == ec[0] || ee[0] == ed[0]){
 		$('.fiveItemFiveTiming').append('<span>'+(ee[ee.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[4].item_4 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_4 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemFiveTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fiveItemFiveTiming').append('<span>'+(ee[0].time / 60).toFixed(0)+'m</span>');
 	}
-	if(ef === undefined || data[0].proMatchOne[4].item_5 == 0 || data[0].proMatchOne[4].item_5 == 33 || data[0].proMatchOne[4].item_5 == 117 || data[0].proMatchOne[4].item_5 ==260) {
+	if(ef === undefined || data.proMatchOne[4].item_5 == 0 || data.proMatchOne[4].item_5 == 33 || data.proMatchOne[4].item_5 == 117 || data.proMatchOne[4].item_5 ==260) {
 		$('.fiveItemSixTiming').append('<span></span>');
 	}else if(ef[0] == ea[0] || ef[0] == eb[0] || ef[0] == ec[0] || ef[0] == ed[0] || ef[0] == ee[0]){
 		$('.fiveItemSixTiming').append('<span>'+(ef[ef.length - 1].time / 60).toFixed(0)+'m</span>')
-	}else if(data[0].proMatchOne[4].item_5 == 218) {
-		zz = data[0].proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
+	}else if(data.proMatchOne[4].item_5 == 218) {
+		zz = data.proMatchOne[4].purchase_log.filter(x => x.key === "ward_observer");
 		$('.fiveItemSixTiming').append('<span>'+(zz[zz.length - 1].time / 60).toFixed(0)+'m</span>');
 	}else {
 		$('.fiveItemSixTiming').append('<span>'+(ef[0].time / 60).toFixed(0)+'m</span>');
 	}
 
 	//RADIANT KILLS NUMBER
-	$('.playerOneKills').append('<span>'+data[0].proMatchOne["0"].kills+'</span>')
-	$('.playerTwoKills').append('<span>'+data[0].proMatchOne["1"].kills+'</span>')
-	$('.playerThreeKills').append('<span>'+data[0].proMatchOne["2"].kills+'</span>')
-	$('.playerFourKills').append('<span>'+data[0].proMatchOne["3"].kills+'</span>')
-	$('.playerFiveKills').append('<span>'+data[0].proMatchOne["4"].kills+'</span>')
+	$('.playerOneKills').append('<span>'+data.proMatchOne["0"].kills+'</span>')
+	$('.playerTwoKills').append('<span>'+data.proMatchOne["1"].kills+'</span>')
+	$('.playerThreeKills').append('<span>'+data.proMatchOne["2"].kills+'</span>')
+	$('.playerFourKills').append('<span>'+data.proMatchOne["3"].kills+'</span>')
+	$('.playerFiveKills').append('<span>'+data.proMatchOne["4"].kills+'</span>')
 
 	//RADIANT DEATHS NUMBER
-	$('.playerOneDeaths').append('<span>'+data[0].proMatchOne["0"].deaths+'</span>')
-	$('.playerTwoDeaths').append('<span>'+data[0].proMatchOne["1"].deaths+'</span>')
-	$('.playerThreeDeaths').append('<span>'+data[0].proMatchOne["2"].deaths+'</span>')
-	$('.playerFourDeaths').append('<span>'+data[0].proMatchOne["3"].deaths+'</span>')
-	$('.playerFiveDeaths').append('<span>'+data[0].proMatchOne["4"].deaths+'</span>')
+	$('.playerOneDeaths').append('<span>'+data.proMatchOne["0"].deaths+'</span>')
+	$('.playerTwoDeaths').append('<span>'+data.proMatchOne["1"].deaths+'</span>')
+	$('.playerThreeDeaths').append('<span>'+data.proMatchOne["2"].deaths+'</span>')
+	$('.playerFourDeaths').append('<span>'+data.proMatchOne["3"].deaths+'</span>')
+	$('.playerFiveDeaths').append('<span>'+data.proMatchOne["4"].deaths+'</span>')
 	
 	//RADIANT ASSISTS NUMBER
-	$('.playerOneAssists').append('<span>'+data[0].proMatchOne["0"].assists+'</span>')
-	$('.playerTwoAssists').append('<span>'+data[0].proMatchOne["1"].assists+'</span>')
-	$('.playerThreeAssists').append('<span>'+data[0].proMatchOne["2"].assists+'</span>')
-	$('.playerFourAssists').append('<span>'+data[0].proMatchOne["3"].assists+'</span>')
-	$('.playerFiveAssists').append('<span>'+data[0].proMatchOne["4"].assists+'</span>')
+	$('.playerOneAssists').append('<span>'+data.proMatchOne["0"].assists+'</span>')
+	$('.playerTwoAssists').append('<span>'+data.proMatchOne["1"].assists+'</span>')
+	$('.playerThreeAssists').append('<span>'+data.proMatchOne["2"].assists+'</span>')
+	$('.playerFourAssists').append('<span>'+data.proMatchOne["3"].assists+'</span>')
+	$('.playerFiveAssists').append('<span>'+data.proMatchOne["4"].assists+'</span>')
 
 
 })
