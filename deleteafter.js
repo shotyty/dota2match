@@ -5071,7 +5071,7 @@ var heroAbilities = [
 
 
 
-fetch('http://72.11.39.21:3000/api/v1/players')
+fetch('https://72.11.39.21:3000/api/v1/players')
   .then(function(response) {
     return response.json();
   })
