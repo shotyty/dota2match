@@ -5069,9 +5069,9 @@ var heroAbilities = [
 		var zy = json.proMatches[2];
 		console.log(JSON.stringify(xx.players))*/
 
-
+//https://jsonblob.com/api/jsonBlob/56c9aaeb-6dc2-11e8-a2f6-f943c6e16357
 //https://72.11.39.21:3000/api/v1/players
-fetch('https://jsonblob.com/api/jsonBlob/56c9aaeb-6dc2-11e8-a2f6-f943c6e16357')
+fetch('https://encoded-aspect-202820.firebaseio.com/.json')
   .then(function(response) {
     return response.json();
   })
