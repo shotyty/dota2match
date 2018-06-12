@@ -5071,7 +5071,7 @@ var heroAbilities = [
 
 //https://jsonblob.com/api/jsonBlob/56c9aaeb-6dc2-11e8-a2f6-f943c6e16357
 //https://72.11.39.21:3000/api/v1/players
-fetch('https://encoded-aspect-202820.firebaseio.com/proMatchOne/.json')
+fetch('https://encoded-aspect-202820.firebaseio.com/.json')
   .then(function(response) {
     return response.json();
   })
